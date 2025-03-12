@@ -1,0 +1,78 @@
+.container1
+{
+    background-color: rgba(170, 28, 235, 0.51);
+    /* background:linear-gradient(rgb(241, 58, 241),rgb(65, 65, 236)); */
+    margin-left:280px;
+    width: 500px;
+    height: 500px;
+    margin-top:180px;
+    margin-left:550px;
+    flex-direction: column;
+    background: linear-gradient(#f93030,#2d2df0);
+
+    border-radius:20px;
+    display: flex;
+}
+.user
+{
+  
+   align-items: center;
+   justify-content: center;
+   display:flex;
+   
+   margin:26px;
+   gap:20px;
+   
+} 
+h2
+{
+    text-align: center;
+    margin: 50px;
+    font-size: 35px;
+}
+#name,#password
+{
+    width: 238px;
+    height: 33px;
+    font-size: 18px;
+    
+}
+label
+{
+    font-size: 25px;
+  font-weight: bold;
+  text-align: left;
+  display: inline-block;
+  width: 138px;
+}
+.button>input
+{
+    margin-left: 139px;
+  margin-top: 75px;
+  width: 86px;
+  height: 40px;
+  font-size: 19px;
+  font-weight: bold;
+}
+#down
+{
+  width: 114px;
+  height: 36px;
+  margin-top: 50px;
+  margin-left: 133px;
+  font-size: 20px;
+  font-weight: bold;
+}
+a
+{
+  margin-left: 162px;
+  margin-top: 7px;
+  margin-bottom: 21px;
+  background-color: aliceblue;
+  
+  padding: 7px;
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+  border-radius: 8px;
+  text-decoration:none;
+}

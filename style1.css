@@ -1,0 +1,45 @@
+.container
+{
+    display:flex;
+    width: 500px;
+    height: 500px;
+ 
+    background:linear-gradient(rgb(59, 56, 226),rgb(228, 72, 228));
+    
+    margin-left: 600px;
+    margin-top:170px;
+    border-radius: 18px;
+    flex-direction: column;
+}
+.box
+{
+    align-items: center; 
+    justify-content: center;
+    text-align: center;
+    display:flex;
+    flex-direction: row;
+    margin: 121px 0px;
+    gap:129px;
+}
+.container h1
+{
+  
+  text-align: center;
+  /* margin-bottom:40px; */
+  margin-top: 70px;
+}
+a
+{
+    text-decoration: none;
+    background-color: aliceblue;
+    width: 70px;
+    height: 30px;
+    padding: 15px;
+    font-size: 20px;
+    color:rgb(0, 0, 0);
+    border-radius: 12px;
+}
+.container h3
+{
+    text-align: center;
+}
