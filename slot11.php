@@ -131,7 +131,7 @@ h1
 <input type="submit" value="submit" name="submit" >
 
 
-<a href="viewslot.php">View Your Slot</a>
+<a href="viewslot1.php">View Your Slot</a>
 
 </div>
 

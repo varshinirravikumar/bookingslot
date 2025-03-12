@@ -26,7 +26,7 @@ while($row=mysqli_fetch_assoc($result))
 {
 $regno=$row['regno'];
 echo '<tr>';
-echo '<td><a href="deleteslot.php?regno=' .$regno.'">delete</a></td>';
+echo '<td><a href="deleteslot1.php?regno=' .$regno.'">delete</a></td>';
 
 echo '<td>' . $row['name'] . '</td>';
 echo '<td>' . $row['regno'] . '</td>';

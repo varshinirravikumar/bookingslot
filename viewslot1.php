@@ -8,7 +8,7 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="slotview.php" method="GET" >
+    <form action="slotview1.php" method="GET" >
        <label><h2>ENTER YOUR REGISTER NO/Employee Id</h2></label>
 <input type="number" name="regno" value="
 <?php 
@@ -18,6 +18,7 @@ if(isset($_GET['regno']))
 }
 ?>" class="fore-control"><br>
 <button type="submit" class="btn btn-primary">SUBMIT</button>
+
 </form>
     
 </body>

@@ -1,9 +1,7 @@
  <!-- in this  only user with the particular regno can view and delete their own slot -->
 
-
  <?php
 $con=mysqli_connect("localhost","root","","bookingslot");
-
 
 if(isset($_GET['regno']))
 {
@@ -34,10 +32,8 @@ while($row=mysqli_fetch_assoc($result))
 $regno=$row['regno'];
 
 
-
 echo '<tr>';
-echo '<td><a href="slotview.php?regno=' .$regno.'">delete</a></td>';
-
+echo '<td><a href="slotview1.php?regno=' . $regno . '&delete=true" onclick="return confirm(\'Are you sure you want to delete this slot?\')">delete</a></td>';
 echo '<td>' . $row['name'] . '</td>';
 echo '<td>' . $row['regno'] . '</td>';
 echo '<td>' . $row['date'] .'</td>';
@@ -45,18 +41,22 @@ echo '<td>' . $row['systemno'] .'</td>';
 echo '<td>' . $row['labname'] . '</td>';
 echo '<td>' . $row['slot'] . '</td>';
 
-
 echo '</tr>';
 }
 echo '</table>';
 }
 }
+
 ?>
-
-
 </body></html>
+
+
+
+
+
+
 <?php
-if(isset($_GET['regno']))
+if(isset($_GET['regno'])&& isset($_GET['delete']) && $_GET['delete'] == 'true')
 {
 $regno=$_GET['regno'];
 $link=mysqli_connect("localhost","root","","bookingslot");
