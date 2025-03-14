@@ -21,9 +21,9 @@ body
 .container
 {
     
-    background:linear-gradient(#d72443,#0000ff4f);
+    background:linear-gradient(#d00a2d,#ca52ec);
     padding: 30px;
-    
+    width: 602px;
 
     border-radius:15px;
     
@@ -33,7 +33,7 @@ body
     height: 40px;
     border:2px solid blue;
     width: 250px;
-
+    font-size: initial;
 }
 
 
@@ -96,18 +96,18 @@ h1
 <input type="date" name="date" id="date"><BR><BR>
 <label for ="systemno">Choose System No</label><br><br>
 <div class="con">
-<input type ="radio" id="systemno" name="systemno" value="system01">system01
-<input type ="radio" id="systemno" name="systemno" value="system02">system02
-<input type ="radio" id="systemno" name="systemno" value="system03">system03
-<input type ="radio" id="systemno" name="systemno" value="system04">system04<BR>
-<input type ="radio" id="systemno" name="systemno" value="system05">system05
-<input type ="radio" id="systemno" name="systemno" value="system06">system06
-<input type ="radio" id="systemno" name="systemno" value="system07">system07
-<input type ="radio" id="systemno" name="systemno" value="system08">system08<BR>
-<input type ="radio" id="systemno" name="systemno" value="system09">system09
-<input type ="radio" id="systemno" name="systemno" value="system10">system10
-<input type ="radio" id="systemno" name="systemno" value="system11">system11
-<input type ="radio" id="systemno" name="systemno" value="system12">system12<BR><BR><BR></div>
+<input type ="radio" id="systemno" name="systemno" value="system01">System 01
+<input type ="radio" id="systemno" name="systemno" value="system02">System 02
+<input type ="radio" id="systemno" name="systemno" value="system03">System 03
+<input type ="radio" id="systemno" name="systemno" value="system04">System 04<BR><BR>
+<input type ="radio" id="systemno" name="systemno" value="system05">System 05
+<input type ="radio" id="systemno" name="systemno" value="system06">System 06
+<input type ="radio" id="systemno" name="systemno" value="system07">System 07
+<input type ="radio" id="systemno" name="systemno" value="system08">System 08<BR><BR>
+<input type ="radio" id="systemno" name="systemno" value="system09">System 09
+<input type ="radio" id="systemno" name="systemno" value="system10">System 10
+<input type ="radio" id="systemno" name="systemno" value="system11">System 11
+<input type ="radio" id="systemno" name="systemno" value="system12">System 12<BR><BR><BR></div>
 <label for ="labname">Choose Lab</label>
 <select id="labname" name="labname">
     <option value="Finech">Fintech</option>
@@ -131,8 +131,8 @@ h1
 <input type="submit" value="submit" name="submit" >
 
 
-<a href="viewslot1.php">View Your Slot</a>
-
+<a href="viewslot1.php">View Your Slot</a><br><br>
+<a href="fetchonlyslot.php">View User Booked Slot to check Availability</a>
 </div>
 
 

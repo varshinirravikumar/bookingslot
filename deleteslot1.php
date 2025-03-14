@@ -1,3 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<h1 style="text-align:center;margin-top:68px;">
+    Delete and View User Booked Slot
+</h1>
 <!-- admin can view all the slot and able to delete all the slot -->
 <?php
 $con=mysqli_connect("localhost","root","","bookingslot");
@@ -9,7 +21,9 @@ $result=mysqli_query($con,$query);
 $numrow=mysqli_num_rows($result);
 if($numrow>0)
 {
-echo '<table border=1>';
+
+
+echo '<table border="1" style="height: 180px; width: 1026px; text-align: center; font-size: large; margin: 124px auto;">';
 echo '<tr>';
 echo '<th>DELETE</th>'; 
 
