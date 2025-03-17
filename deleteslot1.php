@@ -4,8 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+<style>
+th
+{
+    background-color:pink;
+    font-weight:bold;
+    font-size:24px;
+}
+td
+{
+    font-size:22px;
+    font-weight:bold;
+    align-items:center;
+}
+
+    </style>
+
+
+
+
+
 </head>
-<body>
+<body bgcolor=skyblue>
 
 <h1 style="text-align:center;margin-top:68px;">
     Delete and View User Booked Slot

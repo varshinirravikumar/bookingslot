@@ -19,8 +19,8 @@
      }
     .firstpage
     {
-        height: 475px;
-  width: 491px;
+        height: 487px;
+  width: 497px;
   background: linear-gradient(#80ee80,#2c00ff);
   text-align: center;
   align-items: center;
@@ -30,7 +30,7 @@
     }
    h2,h3
    {
-    font-size:22px;
+    font-size:27px;
     font-weight:bold;
    }
     a
@@ -42,10 +42,9 @@
   font-weight: bold;
   background-color: white;
   border-radius: 7px;
-  margin: 33px;
+  margin: 32px;
   transition: transform 0.4s ease, filter 0.3s ease;
-  height: 44px;
-  width: 208px;
+  padding:7px;
   align-content: center;
     }
     a:hover
@@ -67,7 +66,7 @@
         <h2>SRM LAB SLOT BOOKING</h2>
         <h3>Admin View</h3><br>
         <a href="slot11.php">Book Slot</a><br>
-        
+        <a href="fetchonlyslot.php">View Booked Slot to see Availability</a><br>
         <a href="deleteslot1.php">Delete and view Slot</a><br>
     </div>
     </div>

@@ -42,22 +42,23 @@ body
 {
     
     border-radius:7px;
-    
+    margin-left: 251px;
    
     color:black;
-    margin-left: 131px;
+    display: flex;
     font-size: 20px;
     padding: 8px;
 }
 #center>a
 {
     border-radius:7px;
-    
+    text-align:center;
     background-color:white;
     color:black;
     font-size: 20px;
     text-decoration:none;
     padding: 8px;
+    margin-left: 27px;
 }
 label
 {
@@ -131,10 +132,11 @@ h1
 
 <BR>
 <div id="center">
-<input type="submit" value="submit" name="submit" >
+<input type="submit" value="Book Slot" name="submit" >
 
+<br><br>
+<a href="viewslot1.php">View Your Slot</a>
 
-<a href="viewslot1.php">View Your Slot</a><br><br>
 <a href="fetchonlyslot.php">View User Booked Slot to check Availability</a>
 </div>
 

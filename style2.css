@@ -1,15 +1,13 @@
 .container
 {
-    display:flex;
-    width: 500px;
-    height: 500px;
- 
-    background:linear-gradient(rgb(59, 56, 226),rgb(228, 72, 228));
-    
-    margin-left: 600px;
-    margin-top:170px;
-    border-radius: 18px;
-    flex-direction: column;
+    display: flex;
+  width: 500px;
+  height: 500px;
+  background: linear-gradient(rgb(59, 56, 226),rgb(228, 72, 228));
+  margin-left: 676px;
+  margin-top: 170px;
+  border-radius: 18px;
+  flex-direction: column;
 }
 .box
 {

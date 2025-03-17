@@ -26,7 +26,7 @@
 
 
 </head>
-<body>
+<body bgcolor=pink>
     <h1 style="text-align:center;margin-top:80px;">
         View Already Booked Slot By Users</h1>
 <?php

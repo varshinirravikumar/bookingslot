@@ -1,4 +1,41 @@
  <!-- in this  only user with the particular regno can view and delete their own slot -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    th
+    {
+      font-size:23px;
+      font-weight:bold;
+      text-align:center;
+      background-color:white; 
+    }
+
+    td
+    {
+        font-size:20px;
+      font-weight:bold;
+      text-align:center;
+    }
+    table
+    {
+        width: 820px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 123px;
+  margin-left: 543px;
+    }
+
+</style>
+</head>
+
+<body bgcolor=pink>
+    
 
  <?php
 $con=mysqli_connect("localhost","root","","bookingslot");
@@ -82,3 +119,5 @@ echo '';
 
 ?>
 
+</body>
+</html>

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style3.css">
+    <link rel="stylesheet" href="style4.css">
 </head>
 <body>
 
@@ -15,7 +15,7 @@
      
     <label for="name">Enter your name</label>
     <input type="text" name="name" id="name"><br>
-
+    <br><br>
     <label for="password">Enter your password</label>
     <input type="password" name="password" id="password">
     <br>
