@@ -4,6 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>Document</title>
+<style>
+    th
+    {
+        background-color:purple;
+        font-weight:bold;
+        font-size:22px;
+        text-transform:uppercase;
+        text-align:center;
+    }
+
+    td
+    {
+        font-weight:bold;
+        font-size:20px;
+    }
+</style>
+
+
+
+
+
 </head>
 <body>
     <h1 style="text-align:center;margin-top:80px;">

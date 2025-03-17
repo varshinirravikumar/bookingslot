@@ -108,21 +108,24 @@ h1
 <input type ="radio" id="systemno" name="systemno" value="system10">System 10
 <input type ="radio" id="systemno" name="systemno" value="system11">System 11
 <input type ="radio" id="systemno" name="systemno" value="system12">System 12<BR><BR><BR></div>
-<label for ="labname">Choose Lab</label>
-<select id="labname" name="labname">
+<!-- <label for ="labname">Choose Lab</label> -->
+<!-- <select id="labname" name="labname">
     <option value="Finech">Fintech</option>
     <option value="Bloomberg">Bloomberg</option>
-</select>
+</select> -->
+<label for ="labname"> Lab Name</label>
+<input type="text" value="Bloomberg" readonly id="labname" name="labname">
+
 <BR><BR><BR>
 <label for ="slot">Choose Time Slot</label> 
 <select id="slot" name="slot">
-<option value="8.45" >08.45</option>
-<option value="9.45">09.45</option>
-<option value="10.45">10.45</option>
-<option value="11.45">11.45</option>
-<option value="01.45">01.45</option>
-<option value="02.45">02.45</option>
-<option value="03.45">03.45</option>
+<option value="08.45">08.45am</option>
+<option value="09.45">09.45am</option>
+<option value="10.45">10.45am</option>
+<option value="11.45">11.45am</option>
+<option value="01.45">01.45pm</option>
+<option value="02.45">02.45pm</option>
+<option value="03.45">03.45pm</option>
 </select>
 <br>    
 
