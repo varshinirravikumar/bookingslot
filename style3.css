@@ -1,0 +1,82 @@
+body
+{
+  display:flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+
+.container2
+{
+  width: 456px;
+  height: 404px;
+  margin-top: 61px;
+  flex-direction: column;
+  background: linear-gradient(#30ddf9eb,#2d82f04f);
+  border-radius: 20px;
+  display: flex;
+}
+.user
+{
+  
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin: -2px;
+   
+   
+} 
+h2
+{
+    text-align: center;
+    margin: 50px;
+    font-size: 35px;
+}
+#name,#password
+{
+  width: 194px;
+  height: 21px;
+  font-size: 13px;
+ 
+}
+label
+{
+  font-size: 19px;
+  font-weight: bold;
+  text-align: left;
+  display: inline-block;
+  width: 196px;
+}
+
+button>input
+{
+ 
+  margin-top: 75px;
+  width: 86px;
+  height: 40px;
+  font-size: 19px;
+  font-weight: bold;
+}
+#down
+{
+  width: 114px;
+  height: 36px;
+  margin-top: 50px;
+  background-color: #db1adb91;
+  font-size: 20px;
+  font-weight: bold;
+}
+.down a
+{
+  margin: 11px;
+  background-color: #871fa47d;
+  padding: 4px;
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+  border-radius: 8px;
+  text-decoration: none;
+  text-align: center;
+  font-weight: bold;
+
+}

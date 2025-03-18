@@ -16,6 +16,7 @@
    <div class="user">
    
    <form class="action" method="post" autocomplete="off">
+  
    <label for="name">Name</label>
    <input type="text" name="name" placeholder="Enter your name"  id="name">
    <br><br><br>

@@ -1,25 +1,30 @@
+body
+{
+  display:flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
 .container1
 {
-  width: 569px;
-  height: 500px;
-  margin-top: 180px;
-  margin-left: 676px;
-  flex-direction: column;
-  background: linear-gradient(#f93030,#2d2df0);
-  border-radius: 20px;
-  display: flex;
+    width: 447px;
+    height: 368px;
+    margin-top: 61px;
+    flex-direction: column;
+    background: linear-gradient(#30ddf9,#2df070);
+    border-radius: 20px;
+    display: flex;
 }
 .user
 {
   
-   align-items: center;
-   justify-content: center;
-   display:flex;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin: 26px;
    
-   margin:26px;
    
-   
-} 
+}
 h2
 {
     text-align: center;
@@ -29,51 +34,25 @@ h2
 #name,#password
 {
   width: 194px;
-  height: 33px;
-  font-size: 18px;
+  height: 21px;
+  font-size: 13px;
  
 }
 label
 {
-  font-size: 25px;
+  font-size: 19px;
   font-weight: bold;
   text-align: left;
   display: inline-block;
-  width: 235px;
+  width: 111px;
 }
 .button>input
 {
-    margin-left: 139px;
-  margin-top: 75px;
-  width: 86px;
-  height: 40px;
-  font-size: 19px;
-  font-weight: bold;
-}
-#down
-{
-  width: 114px;
-  height: 36px;
-  margin-top: 50px;
-  margin-left: 158px;
-  font-size: 20px;
-  font-weight: bold;
-}
-.down a
-{
-  margin-left: 168px;
-  margin-top: 7px;
-  margin-bottom: 21px;
-  background-color: aliceblue;
-  padding: 7px;
-  font-size: 20px;
-  color: rgb(0, 0, 0);
-  border-radius: 8px;
-  text-decoration: none;
-  height: 29px;
-  width: 77px;
-  display: inline-block;
-  text-align: center;
-  font-weight: bold;
-
+ 
+    margin-top: 42px;
+    width: 78px;
+    
+    font-size: 19px;
+    font-weight: bold;
+    background-color: coral;
 }
