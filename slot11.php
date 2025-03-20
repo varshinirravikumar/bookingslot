@@ -10,30 +10,27 @@
 <style>
 body
 {
-   justify-content: center;
-   align-items: center;
-   
-    display: flex;
-    margin: 0;
-    height: 100vh;
+    justify-content: center;
+  align-items: center;
+  display: flex;
+ 
 }
 
 .container
 {
     
     background:linear-gradient(#d00a2d,#ca52ec);
-    padding: 30px;
-    width: 602px;
-
+    padding: 16px;
+   
     border-radius:15px;
     
 }
 #name,#regno,#labname,#slot,#date
 {
-    height: 40px;
-    border:2px solid blue;
-    width: 250px;
-    font-size: initial;
+    height: 23px;
+  border: 2px solid blue;
+  width: 241px;
+  font-size: 12px;
 }
 
 
@@ -42,29 +39,28 @@ body
 {
     
     border-radius:7px;
-    margin-left: 251px;
+    margin-left: 193px;
    
     color:black;
-    display: flex;
+    
     font-size: 20px;
-    padding: 8px;
+    
 }
 #center>a
 {
-    border-radius:7px;
-    text-align:center;
-    background-color:white;
-    color:black;
-    font-size: 20px;
-    text-decoration:none;
-    padding: 8px;
-    margin-left: 27px;
+    border-radius: 5px;
+  text-align: center;
+  background-color: white;
+  color: #1281c6;
+  font-size: 17px;
+  text-decoration: none;
+  margin-left: 27px;
 }
 label
 {
     display:inline-block;
-    width: 250px;
-    font-size:25px;
+    width: 244px;
+    font-size:19px;
     font-weight:bold;
     text-align:left;
 }
@@ -75,7 +71,41 @@ h1
 }
 .con
 {
-    font-size:20px;
+    font-size:18px;
+}
+
+@media (max-width:800px)
+{
+    .container
+    {
+        width:100%;
+    }
+    #name,#regno,#labname,#slot,#date
+    {
+        height: 23px;
+    border: 2px solid blue;
+    width: 153px;
+    font-size: 9px;
+    }
+    label
+    {
+        width: 160px;
+    font-size: 17px;
+    }
+    .con
+    {
+        font-size:14px;
+    }
+    #center a
+    {
+        font-size: 12px;
+        padding: 3px;
+    }
+    #center input
+    {
+        margin-left: 127px;
+    }
+
 }
 </style>
 
@@ -86,9 +116,9 @@ h1
 <body>
     <div class="container">
     
-    <h1> SRM BLOOMBERG LAB</h1>
+    <h1>Lab Slot Booking</h1>
     <br>
-<form class=" action=" method="post" autocomplete="off">
+<form class=" action=" method="post" autocomplete="off" style ="margin-top:-10px";>
 <label for ="name">Name</label>
 <input type="text" name="name" placeholder="Enter your name" id="name"><BR><BR>
 <label for ="regno"> Regno/Employee ID</label>

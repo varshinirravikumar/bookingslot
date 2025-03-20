@@ -20,52 +20,45 @@
     <input type="password" name="password" id="password">
     <br>
     <div class="down">
-    <button type="submit" id="down">Login</button>
+    <button type="submit" id="down" name="submit">Login</button>
     <br><br>
     <a href="loginuser.php">Back</a></div>
 </form>
 
 </div>
-</div>
+</div></body>
+</html>
+
 <?php
-session_start(); // Start the session
-
-// Database connection
-$con = mysqli_connect("localhost", "root", "", "bookingslot");
-
-// Check for connection errors
-if (!$con) {
-    die("Connection failed: " . mysqli_connect_error());
-}
-
-// Process the form when it's submitted
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-
+// Check if form is submitted
+if (isset($_POST['submit'])) {
     $name = $_POST['name'];
     $password = $_POST['password'];
 
-    // Prevent SQL injection by using prepared statements
-    $stmt = $con->prepare("SELECT name, password FROM userlogin where name=?");
-    $stmt->bind_param("s", $name);
-    $stmt->execute();
-    $stmt->store_result();
+    // Connect to the database
+    $con = mysqli_connect("localhost", "root", "", "bookingslot");
 
-    // Check if the user exists
-    if ($stmt->num_rows > 0) {
-        // Bind the result to variables
-        $stmt->bind_result($db_name, $db_password);
+    // Check connection
+    if (!$con) {
+        die("Connection failed: " . mysqli_connect_error());
+    }
 
-        // Fetch the data
-        $stmt->fetch();
+    // Query to check if the user exists with the entered username and password
+    $query = "SELECT * FROM userlogin WHERE name='$name'";
+    $result = mysqli_query($con, $query);
 
-        // Verify the password
-        if (password_verify($password, $db_password)) {
-            // If password is correct, store user information in session and redirect
-            $_SESSION['username'] = $db_name;
+    
 
-            // Redirect to another page (e.g., slot11.php)
+ if (mysqli_num_rows($result) > 0) {
+        // Fetch the user record
+        $row = mysqli_fetch_assoc($result);
+        $hashed_password = $row['password'];  // Get the stored hashed password
+
+        // Verify the entered password with the stored hashed password
+        if (password_verify($password, $hashed_password)) {
+            // If password is correct, redirect to slot11.php
             header("Location: slot11.php");
-            exit();
+            exit(); // Make sure no further code is executed after the redirect
         } else {
             echo "Invalid password!";
         }
@@ -73,14 +66,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         echo "No user found with that username!";
     }
 
-    $stmt->close();
+    // Close connection
+    mysqli_close($con);
 }
-
-// Close the database connection
-$con->close();
 ?>
-
-
  
-</body>
-</html>

@@ -56,3 +56,40 @@ label
     font-weight: bold;
     background-color: coral;
 }
+.button a
+{
+  text-decoration: none;
+  width: 54px;
+  height: 25px;
+  background-color: #4ba52abd;
+  align-content: center;
+  text-align: center;
+  display: inline-block;
+}
+@media (max-width:600px)
+{
+  .container1
+  {
+    width:90%;
+    height: 90%;
+  }
+  .user
+  {
+    width:267px;
+    margin-top:-40px;
+  }
+  label
+  {
+    width: 65px;
+    font-size:16px;
+  }
+  #name,#password
+  {
+    width: 163px;
+    height:20px;
+  }
+  h2
+  {
+    font-size:23px;
+  }
+}

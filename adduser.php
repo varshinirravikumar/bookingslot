@@ -23,9 +23,15 @@
    <label for="password">Password</label>
    <input type="password" name="password" placeholder="Enter your password"  id="password">
    <div class="button">
-  <input type="submit" name="submit" value="submit"></div>
+  <input type="submit" name="submit" value="submit">
+  <a href="userlog.php"> Sign in</a>
+
+</div>
+  
   </div>
 </div>
+
+
     </form>
 </body>
 </html>
@@ -43,7 +49,8 @@ $con=mysqli_connect("localhost","root","","bookingslot");
 
 if($name!=""&&$password!="")
 {
-$result=mysqli_query($con,"insert into userlogin (name,password) values('$name','$password')");
+$hashed_password = password_hash($password, PASSWORD_DEFAULT);
+$result=mysqli_query($con,"insert into userlogin (name,password) values('$name','$hashed_password')");
 if($result)
 {
     

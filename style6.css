@@ -1,0 +1,38 @@
+th {
+    background-color: rgb(235, 94, 235);
+    font-weight: bold;
+    font-size: 22px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+td {
+    font-weight: bold;
+    font-size: 20px;
+}
+table
+{
+    height: 180px;
+     width: 1026px; 
+     text-align: center; 
+     font-size: large; 
+     margin: 124px auto;
+}
+@media (max-width:600px)
+{
+    table
+    {
+        width:100%;
+        
+    }
+    td,th
+    {
+        
+        font-size: 11px;
+    }
+    .container3
+    {
+        justify-content: center;
+        display: flex;
+    }
+}

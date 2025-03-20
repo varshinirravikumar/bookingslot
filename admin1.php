@@ -1,74 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
-
-    <style>
-     
-     .first
-     {
-        display:flex;
-        margin-top:205px;
-        justify-content:center;
-        align-items:center;
-        margin:0;
-        height:100vh;
-     }
-    .firstpage
-    {
-        height: 487px;
-  width: 497px;
-  background: linear-gradient(#80ee80,#2c00ff);
-  text-align: center;
-  align-items: center;
-  flex-direction: column;
-  display: flex;
-  border-radius: 30px;
-    }
-   h2,h3
-   {
-    font-size:27px;
-    font-weight:bold;
-   }
-    a
-    {
-        text-decoration: none;
-  display: block;
-  color: black;
-  font-size: 21px;
-  font-weight: bold;
-  background-color: white;
-  border-radius: 7px;
-  margin: 32px;
-  transition: transform 0.4s ease, filter 0.3s ease;
-  padding:7px;
-  align-content: center;
-    }
-    a:hover
-    {
-        color:white;
-        background-color:black;
-        transform:scale(1.3);
-        filter:grayscale(0%);
-    }  
-    
-        </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style8.css">
 </head>
 <body>
-
-
-
-    <div class="first">
-        <div class="firstpage">
-        <h2>SRM LAB SLOT BOOKING</h2>
-        <h3>Admin View</h3><br>
-        <a href="slot11.php">Book Slot</a><br>
-        <a href="fetchonlyslot.php">View Booked Slot to see Availability</a><br>
-        <a href="deleteslot1.php">Delete and view Slot</a><br>
+  <div class="first">
+    <div class="firstpage">
+      <h2> LAB SLOT BOOKING</h2>
+      <h3>Admin View</h3><br>
+      <div class="container">
+        <a href="slot11.php">Book Slot</a>
+        <a href="fetchonlyslot.php">View Booked Slot to see Availability</a>
+      </div>
+      <div class="container1">
+        <a href="deleteslot1.php">Delete and <br>
+          view Slot</a>
+      </div>
+      <h1>
+        <?php
+        include 'totalbooking.php'; ?>
+      </h1>
     </div>
-    </div>
+  </div>
 </body>
 </html>

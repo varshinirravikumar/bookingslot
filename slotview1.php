@@ -5,39 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-<style>
-    th
-    {
-      font-size:23px;
-      font-weight:bold;
-      text-align:center;
-      background-color:white; 
-    }
-
-    td
-    {
-        font-size:20px;
-      font-weight:bold;
-      text-align:center;
-    }
-    table
-    {
-        width: 820px;
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  margin-top: 123px;
-  margin-left: 543px;
-    }
-
-</style>
+    <link rel="stylesheet" href="style5.css">
 </head>
-
 <body bgcolor=pink>
-    
+<div class="boxcontainer">
 
- <?php
+<?php
 $con=mysqli_connect("localhost","root","","bookingslot");
 
 if(isset($_GET['regno']))
@@ -85,10 +58,6 @@ echo '</table>';
 }
 
 ?>
-</body></html>
-
-
-
 
 
 
@@ -118,6 +87,6 @@ echo '';
 }
 
 ?>
-
+</div> 
 </body>
 </html>

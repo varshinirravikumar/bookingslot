@@ -4,21 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-<style>
-th
-{
-    background-color:pink;
-    font-weight:bold;
-    font-size:24px;
-}
-td
-{
-    font-size:22px;
-    font-weight:bold;
-    align-items:center;
-}
+    <link rel="stylesheet" href="style6.css">
 
-    </style>
 
 
 
@@ -31,6 +18,7 @@ td
     Delete and View User Booked Slot
 </h1>
 <!-- admin can view all the slot and able to delete all the slot -->
+ <div class="container3">
 <?php
 $con=mysqli_connect("localhost","root","","bookingslot");
 
@@ -43,7 +31,7 @@ if($numrow>0)
 {
 
 
-echo '<table border="1" style="height: 180px; width: 1026px; text-align: center; font-size: large; margin: 124px auto;">';
+echo '<table border="1">';
 echo '<tr>';
 echo '<th>DELETE</th>'; 
 
@@ -107,3 +95,6 @@ echo '';
 }
 
 ?>
+</div>
+</body>
+</html>

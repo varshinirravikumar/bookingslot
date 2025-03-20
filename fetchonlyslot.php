@@ -4,22 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>Document</title>
-<style>
-    th
-    {
-        background-color:purple;
-        font-weight:bold;
-        font-size:22px;
-        text-transform:uppercase;
-        text-align:center;
-    }
+    <link rel="stylesheet" href="style6.css">
 
-    td
-    {
-        font-weight:bold;
-        font-size:20px;
-    }
-</style>
 
 
 
@@ -39,7 +25,7 @@ $result=mysqli_query($con,$query);
 $numrows=mysqli_num_rows($result);
 if($numrows>0)
 {
-    echo '<table border="1" style="height: 180px; width: 1026px; text-align: center; font-size: large; margin: 124px auto;">';
+    echo '<table border="1">';
     echo '<tr>';
     echo '<th>Date</th>';
     echo '<th>System no</th>';
